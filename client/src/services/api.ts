@@ -6,7 +6,7 @@ import { IFetchParams, IPost, IProfile, IRegister } from "~/types/types";
 
 const socialUrl = process.env.REACT_APP_SOCIAL_URL || "http://localhost:9000";
 const socialApiVersion = process.env.REACT_APP_SOCIAL_API_VERSION || "v1";
-axios.defaults.baseURL = `${socialUrl}api/${socialApiVersion}`;
+axios.defaults.baseURL = `${socialUrl}/api/${socialApiVersion}`;
 axios.defaults.withCredentials = true;
 
 let isLogoutTriggered = false;

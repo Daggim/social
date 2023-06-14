@@ -46,7 +46,7 @@ class Express {
     this.app.use(session(config.session as SessionOptions));
     this.app.use(passport.initialize());
     this.app.use(passport.session());
-    this.app.use("api", routers);
+    this.app.use("/api", routers);
 
     // catch 404 and forward to error handler
     this.app.use(function (req, res, next) {
