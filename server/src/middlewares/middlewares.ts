@@ -16,7 +16,7 @@ function validateObjectID(...ObjectIDs) {
     ObjectIDs.forEach((id) => {
       if (!isValidObjectId(req.params[id])) {
         return next(
-          new ErrorHandler(400, `ObjectID ${id} supplied is not valid`)
+          new ErrorHandler(400, `ObjectId ${id} supplied is not valid`)
         );
       } else {
         next();
