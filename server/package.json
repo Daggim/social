@@ -40,9 +40,7 @@
     "passport-github": "^1.1.0",
     "passport-google-oauth2": "^0.2.0",
     "passport-local": "^1.0.0",
-    "socket.io": "^3.0.4"
-  },
-  "devDependencies": {
+    "socket.io": "^3.0.4",
     "@ef-carbon/tspm": "^2.2.5",
     "@types/bad-words": "^3.0.0",
     "@types/bcrypt": "^3.0.0",
