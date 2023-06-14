@@ -1,0 +1,25 @@
+{
+  "name": "social",
+  "version": "1.0.0",
+  "description": "A social media web app for connecting with people around the world",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "start-client": "cd client && pnpm start",
+    "start-server": "cd server && pnpm start",
+    "start": "concurrently \"pnpm start-server\" \"pnpm start-client\"",
+    "init-project": "concurrently \"cd client && pnpm install\" \"cd server && pnpm install\""
+  },
+  "keywords": [],
+  "author": "Daggim Hailu <daggimhailu@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^5.3.0"
+  },
+  "dependencies": {
+    "react-refresh": "^0.14.0"
+  }
+}
